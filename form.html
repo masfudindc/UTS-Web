@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulir Masfudin</title>
+
+        <link rel="stylesheet" type="text/css" href="form.css">
+        <link rel="stylesheet" type="text/css" href="crud.css">
+
+    </head>
+
+    <body>
+
+        <div class="navbar">
+            <a class="navbar-logo" href="index.html"><img src="img/ChelseaBadge.webp" class="logo-img"></a>
+            <nav>
+                <ul class="navbar-list">
+                    <li class="navbar-item"><a href="index.html">Home</a></li>
+                </ul>
+
+            </nav>
+        </div>
+
+
+
+        <section class="match">
+
+            <div class="match-header">
+
+                <div class="match-tournament"><img src="jadwalIMG/pl-logo.svg" /> Liga Primer Inggris</div>
+            </div>
+
+            <div class="match-main">
+
+                <div class="kolom">
+                    <div class="team">
+
+                        <div class="team-logo">
+                            <img src="jadwalIMG/chelsea-logo.svg" />
+                        </div>
+
+                        <h2 class="team-name">Chelsea</h2>
+                    </div>
+                </div>
+                
+                <div class="kolom">
+                    <div class="match-details">
+
+                        <div class="match-date">
+                            22 Oktober 2022 
+                        </div>
+                        
+                        <div class="match-score">
+                            <strong>23:30</strong>
+                        </div>
+                        
+                        <div class="match-time">
+                            
+                        </div>
+
+                        <div class="match-stadium">
+                            Stamford Bridge Stadium
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="kolom">
+                    <div class="team">
+
+                        <div class="team-logo">
+                            <img src="jadwalIMG/mu-logo.svg" />
+                        </div>
+
+                        <h2 class="team-name"> Man Utd</h2>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+
+
+        <section class="predict">
+        <table>
+            <tr>
+                <td>
+                    <form autocomplete="off" onsubmit="onFormSubmit()" method="post">
+                        <div>
+                            <label for="nama">Nama Anda</label>
+                            <input type="text" name="nama" id="nama">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="timMenang">Prediksi Tim Menang</label>
+                            <input type="text" name="timMenang" id="timMenang">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="skorHome">Skor Chelsea</label>
+                            <input type="number" name="skorHome" id="skorHome">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="skorAway">Skor Man United</label>
+                            <input type="number" name="skorAway" id="skorAway">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="motm">Prediksi MOTM </label>
+                            <input type="text" name="motm" id="motm">
+                        </div>
+                        <br>
+
+                        <div class="form_action--button">
+                            <input type="submit" value="Tentukan!">
+                        </div>
+
+                    </form>
+
+                    <td>
+                        <table class="list" id="storeList">
+                            <thead>
+                                <tr>
+                                    <th> Nama </th>
+                                    <th> Tim Menang </th>
+                                    <th> Chelsea </th>
+                                    <th> ManUtd </th>
+                                    <th> MOTM </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </td>
+                </td>
+            </tr>
+        </table>
+        </section>
+        
+
+
+
+        <div class="footer" id="footer">
+            <div class="footer">
+                <p>Copyright</p>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="crud.js"></script>
+
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+               $('form').validate({
+                   rules: {
+                       nama: {
+                           required: true,
+                       },
+                       timMenang: {
+                           required: true,
+                       },
+                       skorHome: {
+                           required: true,
+                       },
+                       skorAway: {
+                           required: true,
+                       }
+                   },
+               });
+            });
+        </script>
+
+    </body>
+</html>

@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+
+.jadwalPertandingan {
+    width: 100%;
+    background-color: #1c2a38;
+    padding: 40px;
+
+    
+}
+
+
+.match {
+	background-color: white;
+	display : flex;
+	flex-direction: column;
+    width: 600px;
+    height: fit-content;
+	border-radius: 10px;
+    margin: 5px auto;
+    	
+}
+
+
+.match-header {
+	padding: 15px;
+}
+
+
+.match-tournament {
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+    justify-content: center;
+	align-items: center;
+}
+
+.match-tournament img{
+    width: 30px;
+}
+
+
+.match-main {
+	display: flex;
+	position: relative;
+}
+
+.kolom {
+	padding: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(100%/3);
+}
+
+.team {
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	
+}
+
+.team-logo {
+	height: 100px;
+	display: flex;
+}
+
+.team-logo img {
+    width: 100px;
+}
+
+.team-name {
+	text-align:center;
+	margin-top: 24px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.match-details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.match-date{
+	font-size: 14px;
+}
+
+.match-score {
+	display: flex;
+	align-items: center;
+    line-height: 1.5;
+    font-size: 48px;
+	font-weight: 600;
+    margin-left: 10px;
+	margin-right: 10px;
+}
+
+.match-time {
+	color: #f60000;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.match-stadium {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+
+.tebakSkor{
+	margin-top: 15px;
+}
+
+.jadwalPertandingan a{
+	border: solid black;
+	padding: 5px;
+	border-radius: 15px;
+    color: black;
+    text-decoration: none;
+}

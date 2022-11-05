@@ -1,0 +1,205 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+	font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    background-image: url("img/cityche.jpg");
+    background-size: 100%;
+	background-attachment: fixed;
+
+}
+
+
+.valid {
+    border: 1px solid green;
+}
+
+.error {
+    color: red;
+}
+
+
+.navbar a{
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a :hover{
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+
+.navbar{
+    background-color: blue;
+    display: flex;
+    width: auto;
+    color: white;
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center;
+}
+
+
+.navbar :hover{
+    color: rgb(66, 113, 206);
+}
+
+.navbar-list{
+    display: flex;
+    list-style: none;
+}
+
+.navbar-item{
+    margin-right: 25px;
+}
+
+.logo-img{
+    height: 60px;
+    padding-left: 15px;
+}
+
+
+
+
+.match {
+	background-color: white;
+	display : flex;
+	flex-direction: column;
+    height: 20%;
+    width: 80%;
+    height: fit-content;
+	border-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    margin: 50px auto;
+    margin-bottom: 0px;
+
+	padding-bottom: 20px;
+	border-bottom: solid black;
+	border-bottom-style: dotted;
+    	
+}
+
+
+.match-header {
+	padding: 15px;
+}
+
+
+.match-tournament {
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+    justify-content: center;
+	align-items: center;
+}
+
+.match-tournament img{
+    width: 30px;
+}
+
+
+.match-main {
+	display: flex;
+	position: relative;
+}
+
+.kolom {
+	padding: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: calc(100%/3);
+}
+
+.team {
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+	
+}
+
+.team-logo {
+	height: 100px;
+	display: flex;
+}
+
+.team-logo img {
+    width: 100px;
+}
+
+.team-name {
+	text-align:center;
+	margin-top: 24px;
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.match-details {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.match-date{
+	font-size: 14px;
+}
+
+.match-score {
+	display: flex;
+	align-items: center;
+    line-height: 1.5;
+    font-size: 48px;
+	font-weight: 600;
+    margin-left: 10px;
+	margin-right: 10px;
+}
+
+.match-time {
+	color: #f60000;
+	font-size: 14px;
+	font-weight: 600;
+}
+
+.match-stadium {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2;
+}
+
+
+
+
+.predict{
+	background-color: white;
+	display : flex;
+	flex-direction: column;
+	justify-content: center;
+    height: 50%;
+    width: 80%;
+	border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    margin: 50px auto;
+    margin-top: 0px;
+
+    
+}
+
+
+.footer{
+    color: white;
+    display: flex;
+    height: 50px;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .3s ease;
+}
+
+html {
+  font-family: "Roboto Light", serif;
+  scroll-behavior: smooth;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.navbar{
+    
+    background-color: blue;
+    display: flex;
+    height: 8vh;
+    width: 100%;
+    color: white;
+    font-weight: bold;
+    justify-content: space-between;
+    padding: 5px;
+    align-items: center; 
+    z-index: 99;
+}
+
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a :hover{
+    color: white;
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+.logo-img{
+    height: 7vh;
+    padding-left: 15px;
+}
+
+.navbar :hover{
+    color: rgb(66, 113, 206);
+}
+
+.navbar-list{
+    display: flex;
+    list-style: none;
+}
+
+.navbar-item{
+    margin-right: 25px;
+}
+
+
+.navigation-auto div{
+  transition: 0.5s;
+}
+
+
+.header{
+    height: 90vh;
+    display:block;
+
+}
+
+.header-img{
+    background-image: url("sildebg/stadion.jpg");
+    height: 90vh;
+    width: auto;
+    opacity: 0.2;
+    
+}
+
+.header-text h1{
+  color: blue;
+}
+
+.header-text{
+  font-size: 30px;
+  color: blue;
+  text-align: center;
+  transform: translate(0%, -55vh);
+}
+
+.about{
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+
+}
+
+.about-text{
+    text-align: justify;
+    margin: 20px;
+}
+
+
+.about-img{
+    height: 300px;
+    width: auto;
+    margin: 50px;
+
+}
+
+
+.footer{
+    color: white;
+    display: flex;
+    height: 7vh;
+    background-color: blue;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.jadwalPertandingan {
+  width: 100%;
+  height: fit-content;
+  background-color: #1c2a38;
+  
+}
+  
+
+.jadwalPertandingan h1{
+  color: white;
+  position: relative;
+  text-align: center;
+}
+
+
+.players h1{
+  color: white;
+  background-color: #1c2a38;
+  padding: 5px;
+  font-size: 25px;
+}
+
+.players{
+  width: 100%;
+  text-align: center;
+}
+
+.img-pelatih{
+  height: 300px;
+}
+
+.img-pemain{
+  height: 300px;
+}
+
+marquee :hover{
+  transform: scale(1.2);
+}
